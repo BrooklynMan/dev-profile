@@ -8,11 +8,16 @@
 
 import UIKit
 
+
+
 class ViewController: UIViewController {
 
+    @IBOutlet weak var devslopesProfileImg: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        devslopesProfileImg.layer.cornerRadius = 5
+        devslopesProfileImg.layer.masksToBounds = true
     }
 
     override func didReceiveMemoryWarning() {
